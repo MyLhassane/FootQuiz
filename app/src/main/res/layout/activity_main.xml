@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context="com.example.hassan.footquiz.MainActivity"
+    android:background="#190e0e">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:weightSum="100"
+        android:id="@+id/linearLayout"
+        android:background="#fff">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="25"
+            android:weightSum="100"
+            android:background="#a1a1a1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Select your choice"
+                android:id="@+id/textView7"
+                android:gravity="center"
+                android:layout_weight="50"
+                android:background="#34495e"
+                android:textColor="#1abc9c"
+                android:singleLine="false"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/imageView"
+                android:src="@drawable/roundedline"
+                android:scaleType="fitXY"
+                android:layout_weight="50" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:weightSum="300"
+            android:id="@+id/layoutContent"
+            android:measureWithLargestChild="false"
+            android:longClickable="false"
+            android:gravity="center_vertical"
+            android:layout_weight="50"
+            android:background="#3498db"
+            android:theme="@style/Base.V22.Theme.AppCompat">
+
+            <!-- tmp  start Temporary item -->
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btnNewPlayer"
+                android:id="@+id/btnNewPlayer"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="50"
+                android:background="@drawable/round_button"
+                android:singleLine="true"
+                android:padding="10dp"
+                android:longClickable="false"
+                android:textColor="#9b59b6" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btnLastPlayer"
+                android:id="@+id/btnLastPlayer"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="50"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/round_button"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="#9b59b6" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btnPreviousPlayers"
+                android:id="@+id/btnPreviousPlayers"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="50"
+                android:background="@drawable/round_button"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="#9b59b6" />
+
+            <!-- tmp  end Temporary item -->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="25"
+            android:weightSum="100"
+            android:background="#a1a1a1" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/imageView6"
+                android:src="@drawable/roundedlinerotation"
+                android:scaleType="fitXY"
+                android:layout_weight="50" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="ADS"
+                android:id="@+id/textView9"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:layout_weight="50"
+                android:background="#34495e"
+                android:textColor="#1abc9c" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:paddingBottom="0dp"
+android:paddingLeft="0dp"
+android:paddingRight="0dp"
+android:paddingTop="0dp"
+tools:context="com.example.hassan.footquiz.MainActivity"
+android:background="#190e0e">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    android:id="@+id/linearLayout"
+    android:background="#fff">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="25"
+        android:weightSum="100"
+        android:background="#a1a1a1">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/inputNew"
+            android:id="@+id/textView"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:layout_weight="50"
+            android:background="#34495e"
+            android:textColor="#1abc9c"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/imageView"
+            android:src="@drawable/roundedline"
+            android:scaleType="fitXY"
+            android:layout_weight="50" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:weightSum="75"
+        android:id="@+id/layoutContent"
+        android:measureWithLargestChild="false"
+        android:longClickable="false"
+        android:background="#3498db"
+        android:layout_weight="50">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="25">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/inputNew"
+                android:inputType="text"
+                android:hint="@string/AddYourName"
+                android:minWidth="@dimen/abc_search_view_text_min_width"
+                android:layout_margin="30dp"
+                android:background="#1abc9c"
+                android:textColorHint="#3498db"
+                android:textColor="#34495e" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="50">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btnCreate"
+                android:id="@+id/btn_add_data"
+                android:background="@drawable/round_button"
+                android:singleLine="true"
+                android:longClickable="false"
+                android:textColor="#34495e"
+                android:onClick="btn_add_data"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtScore"
+                android:layout_weight="0"
+                android:text="0"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="25"
+        android:weightSum="100"
+        android:background="#a1a1a1" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/imageView2"
+            android:src="@drawable/roundedlinerotation"
+            android:scaleType="fitXY"
+            android:layout_weight="50" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="ADS"
+            android:id="@+id/textView8"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:layout_weight="50"
+            android:background="#34495e"
+            android:textColor="#1abc9c" />
+    </LinearLayout>
+
+</LinearLayout>
+
+</RelativeLayout>

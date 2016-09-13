@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Foot Quiz</string>
+    <string name="listView">Create List View</string>
+    <string name="Players">Players</string>
+    <string name="Coach">Coach</string>
+    <string name="National">National</string>
+    <string name="interNational">Inter National</string>
+    <string name="txtNewPlayer">New Player</string>
+    <string name="txtPreviousPlayers">Previous players</string>
+    <string name="btnNewPlayer">New Player</string>
+    <string name="btnPreviousPlayers">Previous players</string>
+    <string name="btnLastPlayer">Last Player</string>
+    <string name="txtCheckPlayers">Check Players</string>
+    <string name="btnCreate">Create</string>
+    <string name="Logo">Logo</string>
+    <string name="imgLogo">Logo</string>
+    <string name="unnamed">unnamed</string>
+    <string name="inputNew">Add new player</string>
+    <string name="AddYourName">Add your name</string>
+</resources>
